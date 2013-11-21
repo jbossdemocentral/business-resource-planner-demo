@@ -3,8 +3,6 @@ JBoss Business Planner Demo
 
 ![Install Console] (https://github.com/eschabell/business-resource-planner-demo/blob/master/docs/demo-images/install-console.png?raw=true)
 
-![Main View] (https://github.com/eschabell/business-resource-planner-demo/blob/master/docs/demo-images/main-view.png?raw=true)
-
 ![Cloud Balancing] (https://github.com/eschabell/business-resource-planner-demo/blob/master/docs/demo-images/cloud-balancing.png?raw=true)
 
 ![Vehicle Routing] (https://github.com/eschabell/business-resource-planner-demo/blob/master/docs/demo-images/vehicle-routing.png?raw=true)
