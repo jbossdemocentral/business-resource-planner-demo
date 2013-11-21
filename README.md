@@ -1,7 +1,7 @@
-JBoss BRMS Planner Demo 
-=======================
+JBoss Business Planner Demo 
+===========================
 
-Demo based on JBoss BRMS Planner product.
+![Install Console] (https://github.com/eschabell/business-resource-planner-demo/blob/master/docs/demo-images/install-console.png?raw=true)
 
 
 Quickstart
@@ -13,7 +13,7 @@ Quickstart
 
 3. Run 'init.sh' file.
 
-4. Run examples at http://localhost:8080/optaplanner-webexamples-6.0.0-redhat-5 
+4. Run web examples at http://localhost:8080/optaplanner-webexamples-6.0.0-redhat-5 
 
 
 Released versions
