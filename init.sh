@@ -81,7 +81,12 @@ echo Unpacking $PRODUCT $VERSION...
 echo
 cd $SRC_DIR
 unzip $PLANNER 
-cp -r webexamples/binaries/optaplanner-webexamples-6.0.0-redhat-5.war ../$SERVER_DIR
+
+# temp solution until next beta release is done.
+#
+#cp -r webexamples/binaries/optaplanner-webexamples-6.0.0-redhat-5.war ../$SERVER_DIR
+cp -r $SUPPORT_DIR/optaplanner-webexamples-6.0.0-redhat-5.war ../$SERVER_DIR
+
 rm -rf examples binaries webexamples
 cd ..
 
