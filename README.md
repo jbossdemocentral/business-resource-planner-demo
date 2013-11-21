@@ -1,5 +1,5 @@
-JBoss Business Planner Demo 
-===========================
+JBoss Business Optimizer Demo 
+=============================
 
 ![Install Console] (https://github.com/eschabell/business-resource-planner-demo/blob/master/docs/demo-images/install-console.png?raw=true)
 
