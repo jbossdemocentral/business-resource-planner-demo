@@ -11,7 +11,7 @@ SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/planner-demo
 EAP=jboss-eap-6.1.0.zip
-PLANNER=jboss-bpms-brms-6.0.0-redhat-4-optaplanner.zip
+PLANNER=jboss-bpms-brms-6.0.0.Beta1-optaplanner.zip
 VERSION=6.0.0.Beta
 
 # wipe screen.
