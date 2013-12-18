@@ -17,12 +17,14 @@ Quickstart
 
 3. Run 'init.sh' file.
 
-4. Run web examples at [http://localhost:8080/optaplanner-webexamples-6.0.0-redhat-5] (http://localhost:8080/optaplanner-webexamples-6.0.0-redhat-5) 
+4. Run web examples at [http://localhost:8080/optaplanner-webexamples-6.0.0-redhat-6] (http://localhost:8080/optaplanner-webexamples-6.0.0-redhat-6) 
 
 
 Released versions
 -----------------
 
 See the tagged releases for the following versions of the product:
+
+- v0.2 - JBoss BRMS 6.0.0.Beta, JBoss EAP 6.1.1, and Planner example war installed.
 
 - v0.1 - JBoss BRMS 6.0.0.Beta1, JBoss EAP 6.1, and Planner example war installed.
