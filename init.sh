@@ -11,9 +11,9 @@ SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/planner-demo
 EAP=jboss-eap-6.1.1.zip
-PLANNER=jboss-bpms-brms-6.0.0.GA-redhat-1-optaplanner.zip
-EXAMPLE_WAR=optaplanner-webexamples-6.0.2-redhat-1.war
-VERSION=6.0.0.CR1
+PLANNER=jboss-bpms-brms-6.0.0.GA-redhat-2-optaplanner.zip
+EXAMPLE_WAR=optaplanner-webexamples-6.0.2-redhat-2.war
+VERSION=6.0.0.CR2
 
 # wipe screen.
 clear 
@@ -85,8 +85,8 @@ unzip -q $PLANNER
 
 echo "  - installing the JBoss Business Resource Optimizer example app.."
 echo
-cp -r jboss-bpms-brms-6.0.0.GA-redhat-1-optaplanner/webexamples/binaries/$EXAMPLE_WAR ../$SERVER_DIR
-rm -rf jboss-bpms-brms-6.0.0.GA-redhat-1-optaplanner 
+cp -r jboss-bpms-brms-6.0.0.GA-redhat-2-optaplanner/webexamples/binaries/$EXAMPLE_WAR ../$SERVER_DIR
+rm -rf jboss-bpms-brms-6.0.0.GA-redhat-2-optaplanner 
 cd ..
 
 echo "  - enabling demo accounts logins in application-users.properties file..."
