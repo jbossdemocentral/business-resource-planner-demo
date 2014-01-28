@@ -14,7 +14,7 @@ Quickstart
 4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.1/bin directory
 
 
-5. Run web examples at [http://localhost:8080/http://localhost:8080/optaplanner-webexamples-6.0.2-redhat-2] (http://localhost:8080/optaplanner-webexamples-6.0.2-redhat-2)
+5. Run web examples at [http://localhost:8080/optaplanner-webexamples-6.0.2-redhat-2] (http://localhost:8080/optaplanner-webexamples-6.0.2-redhat-2)
 
 
 Released versions
