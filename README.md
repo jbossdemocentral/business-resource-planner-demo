@@ -21,7 +21,7 @@ Released versions
 
 See the tagged releases for the following versions of the product:
 
-- v0.6 - JBoss BRMS 6.0.2, JBoss EAP 6.1.1, and Planner example war installed.
+- v0.7 - JBoss BRMS 6.0.2, JBoss EAP 6.1.1, and Planner example war installed.
 
 - v0.6 - JBoss BRMS 6.0.1, JBoss EAP 6.1.1, and Planner example war installed.
 
