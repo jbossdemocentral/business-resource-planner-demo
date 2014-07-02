@@ -16,6 +16,12 @@ Quickstart
 5. Run web examples at [http://localhost:8080/optaplanner-webexamples-6.0.2-redhat-6] (http://localhost:8080/optaplanner-webexamples-6.0.2-redhat-6)
 
 
+Supporting Articles
+-------------------
+
+[Red Hat JBoss BPM Suite - all product demos updated for version 6.0.2.GA release](http://www.schabell.org/2014/07/redhat-jboss-bpmsuite-product-demos-6.0.2-updated.html)
+
+
 Released versions
 -----------------
 
