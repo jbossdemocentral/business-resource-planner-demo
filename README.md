@@ -5,7 +5,7 @@ JBoss Business Optimizer Demo
 Quickstart
 ----------
 
-1. Clone project.
+1. [Download and unzip.](https://github.com/jbossdemocentral/business-resource-optimizer-demo/archive/master.zip)
 
 2. Add products to installs directory.
 
