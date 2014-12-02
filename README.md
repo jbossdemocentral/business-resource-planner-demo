@@ -1,4 +1,4 @@
-JBoss Business Optimizer Demo 
+JBoss Business Resource Optimizer Demo 
 =============================
 
 
