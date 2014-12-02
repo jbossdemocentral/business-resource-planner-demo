@@ -1,7 +1,7 @@
 #!/bin/sh 
 DEMO="JBoss Business Optimizer Demo"
 AUTHORS="Geoffrey De Smet, Eric D. Schabell"
-PROJECT="git@github.com:eschabell/brms-planner-demo.git"
+PROJECT="git@github.com:jbossdemocentral/brms-planner-demo.git"
 PRODUCT="JBoss BRMS"
 JBOSS_HOME=./target/jboss-eap-6.1
 SERVER_DIR=$JBOSS_HOME/standalone/deployments/
@@ -11,9 +11,9 @@ SRC_DIR=./installs
 SUPPORT_DIR=./support
 PRJ_DIR=./projects/planner-demo
 EAP=jboss-eap-6.1.1.zip
-PLANNER=jboss-bpms-brms-6.0.2.GA-redhat-5-optaplanner
-EXAMPLE_WAR=optaplanner-webexamples-6.0.3-redhat-4.war
-VERSION=6.0.2.GA
+PLANNER=jboss-bpms-brms-6.0.3.GA-redhat-1-optaplanner
+EXAMPLE_WAR=optaplanner-webexamples-6.0.3-redhat-6.war
+VERSION=6.0.3
 
 # wipe screen.
 clear 
@@ -34,7 +34,7 @@ echo "##                                                                 ##"
 echo "##  brought to you by,                                             ##"   
 echo "##             ${AUTHORS}                  ##"
 echo "##                                                                 ##"   
-echo "##  ${PROJECT}                 ##"
+echo "##  ${PROJECT}          ##"
 echo "##                                                                 ##"   
 echo "#####################################################################"
 echo

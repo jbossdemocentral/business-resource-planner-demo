@@ -27,6 +27,10 @@ Released versions
 
 See the tagged releases for the following versions of the product:
 
+- v0.8 - JBoss BRMS 6.0.3, JBoss EAP 6.1.1, and Planner example war installed.
+
+- v0.7 - moved to JBoss Demo Central.
+
 - v0.7 - JBoss BRMS 6.0.2, JBoss EAP 6.1.1, and Planner example war installed.
 
 - v0.6 - JBoss BRMS 6.0.1, JBoss EAP 6.1.1, and Planner example war installed.
@@ -42,6 +46,6 @@ See the tagged releases for the following versions of the product:
 - v0.1 - JBoss BRMS 6.0.0.Beta1, JBoss EAP 6.1, and Planner example war installed.
 
 
-![Cloud Balancing] (https://github.com/eschabell/business-resource-planner-demo/blob/master/docs/demo-images/cloud-balancing.png?raw=true)
+![Cloud Balancing] (https://github.com/jbossdemocentral/business-resource-planner-demo/blob/master/docs/demo-images/cloud-balancing.png?raw=true)
 
-![Vehicle Routing] (https://github.com/eschabell/business-resource-planner-demo/blob/master/docs/demo-images/vehicle-routing.png?raw=true)
+![Vehicle Routing] (https://github.com/jbossdemocentral/business-resource-planner-demo/blob/master/docs/demo-images/vehicle-routing.png?raw=true)
