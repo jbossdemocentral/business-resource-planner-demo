@@ -52,7 +52,7 @@ else
 		exit
 fi
 
-if [ -r $SRC_DIR/$PLANNER.zip ] || [ -L $SRC_DIR/$PLANNER ]; then
+if [ -r $SRC_DIR/$PLANNER.zip ] || [ -L $SRC_DIR/$PLANNER.zip ]; then
 		echo Planner sources are present...
 		echo
 else
