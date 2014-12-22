@@ -27,6 +27,8 @@ Released versions
 
 See the tagged releases for the following versions of the product:
 
+- v0.9 - Migrated to JBoss Demo Central and updated windows init.bat support.
+
 - v0.8 - JBoss BRMS 6.0.3, JBoss EAP 6.1.1, and Planner example war installed.
 
 - v0.7 - moved to JBoss Demo Central.
