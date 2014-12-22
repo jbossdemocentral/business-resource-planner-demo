@@ -3,6 +3,7 @@ DEMO="JBoss Business Optimizer Demo"
 AUTHORS="Geoffrey De Smet, Eric D. Schabell"
 PROJECT="git@github.com:jbossdemocentral/brms-planner-demo.git"
 PRODUCT="JBoss BRMS"
+TARGET_DIR=./target
 JBOSS_HOME=./target/jboss-eap-6.1
 SERVER_DIR=$JBOSS_HOME/standalone/deployments/
 SERVER_CONF=$JBOSS_HOME/standalone/configuration/
@@ -39,7 +40,6 @@ echo "##                                                                 ##"
 echo "#####################################################################"
 echo
 
-command -v mvn -q >/dev/null 2>&1 || { echo >&2 "Maven is required but not installed yet... aborting."; exit 1; }
 
 # make some checks first before proceeding.	
 if [ -r $SRC_DIR/$EAP ] || [ -L $SRC_DIR/$EAP ]; then
@@ -47,6 +47,16 @@ if [ -r $SRC_DIR/$EAP ] || [ -L $SRC_DIR/$EAP ]; then
 		echo
 else
 		echo Need to download $EAP package from the Customer Portal 
+		echo and place it in the $SRC_DIR directory to proceed...
+		echo
+		exit
+fi
+
+if [ -r $SRC_DIR/$PLANNER.zip ] || [ -L $SRC_DIR/$PLANNER.zip ]; then
+		echo Planner sources are present...
+		echo
+else
+		echo Need to download ${PLANNER}.zip package from the Customer Portal 
 		echo and place it in the $SRC_DIR directory to proceed...
 		echo
 		exit
@@ -75,19 +85,17 @@ fi
 # Unzip the JBoss EAP instance.
 echo Unpacking new JBoss Enterprise EAP 6...
 echo
-unzip -q -d target $SRC_DIR/$EAP
+unzip -q -d $TARGET_DIR $SRC_DIR/$EAP
 
 # Unzip the required files from JBoss product deployable.
 echo Unpacking $PRODUCT $VERSION...
 echo
-cd $SRC_DIR
-unzip -q $PLANNER.zip 
+unzip -q -d $TARGET_DIR $SRC_DIR/$PLANNER.zip
 
 echo "  - installing the JBoss Business Resource Optimizer example app.."
 echo
-cp -r $PLANNER/webexamples/binaries/$EXAMPLE_WAR ../$SERVER_DIR
-rm -rf $PLANNER
-cd ..
+cp -r $TARGET_DIR/$PLANNER/webexamples/binaries/$EXAMPLE_WAR $SERVER_DIR
+rm -rf $TARGET_DIR/$PLANNER
 
 echo "  - enabling demo accounts logins in application-users.properties file..."
 echo
