@@ -13,7 +13,30 @@ Quickstart
 
 4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.1/bin directory
 
-5. Run web examples at [http://localhost:8080/optaplanner-webexamples-6.0.2-redhat-6] (http://localhost:8080/optaplanner-webexamples-6.0.2-redhat-6)
+5. Run web examples at [http://localhost:8080/optaplanner-webexamples-6.0.3-redhat-6/] (http://localhost:8080/optaplanner-webexamples-6.0.3-redhat-6/)
+
+Docker
+-------------------------
+
+The following steps can be used to configure and run the demo in a docker container
+
+1. [Download and unzip.](https://github.com/jbossdemocentral/business-resource-optimizer-demo/archive/master.zip)
+
+2. Add product installer to installs directory.
+
+3. Build demo image
+
+	```
+	docker build -t jbossdemocentral/business-resource-optimizer-demo .
+	```
+4. Start demo container
+
+	```
+	docker run --it -p 8080:8080 -p 9990:9990 jbossdemocentral/business-resource-optimizer-demo
+	```
+5. Run web examples at http://<DOCKER_HOST>:8080/optaplanner-webexamples-6.0.3-redhat-6/
+
+Additional information can be found in the jbossdemocentral docker [developer repository](https://github.com/jbossdemocentral/docker-developer)
 
 
 Supporting Articles
