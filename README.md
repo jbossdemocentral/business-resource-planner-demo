@@ -1,10 +1,13 @@
 JBoss Business Resource Optimizer Demo 
-=============================
+======================================
+Give you a tour of the Business Resource Optimizer component for resource planning in JBoss BRMS 
+with two examples, a vehicle routing solution and a cloud load balancing solution.
+
+There are two options available to you for using this demo; local and Docker.
 
 
-Quickstart
-----------
-
+Option 1 - Install on your machine
+----------------------------------
 1. [Download and unzip.](https://github.com/jbossdemocentral/business-resource-optimizer-demo/archive/master.zip)
 
 2. Add products to installs directory.
@@ -16,9 +19,8 @@ Quickstart
 5. Run web examples at [http://localhost:8080/optaplanner-webexamples-6.0.3-redhat-6/] (http://localhost:8080/optaplanner-webexamples-6.0.3-redhat-6/)
 
 
-Optional Docker Install
------------------------
-
+Option 2 - Generate docker install
+----------------------------------
 The following steps can be used to configure and run the demo in a docker container
 
 1. [Download and unzip.](https://github.com/jbossdemocentral/business-resource-optimizer-demo/archive/master.zip)
@@ -44,13 +46,13 @@ Additional information can be found in the jbossdemocentral docker [developer re
 
 Supporting Articles
 -------------------
+[3 shockingly easy ways into JBoss rules, events, planning & BPM](http://www.schabell.org/2015/01/3-shockingly-easy-ways-into-jboss-brms-bpmsuite.html)
 
 [Red Hat JBoss BPM Suite - all product demos updated for version 6.0.2.GA release](http://www.schabell.org/2014/07/redhat-jboss-bpmsuite-product-demos-6.0.2-updated.html)
 
 
 Released versions
 -----------------
-
 See the tagged releases for the following versions of the product:
 
 - v1.0 - JBoss BRMS 6.0.3, JBoss EAP 6.1.1 and optional docker installation.
