@@ -1,6 +1,6 @@
 #!/bin/sh 
 DEMO="JBoss Business Optimizer Demo"
-AUTHORS="Geoffrey De Smet, Eric D. Schabell"
+AUTHORS="Geoffrey De Smet, Andrew Block, Eric D. Schabell"
 PROJECT="git@github.com:jbossdemocentral/brms-planner-demo.git"
 PRODUCT="JBoss BRMS"
 TARGET_DIR=./target
@@ -33,7 +33,7 @@ echo "##  #####  #        #    #####  #   #  #####  #####  #####  #   #  ##"
 echo "##                                                                 ##"   
 echo "##                                                                 ##"   
 echo "##  brought to you by,                                             ##"   
-echo "##             ${AUTHORS}                  ##"
+echo "##             ${AUTHORS}    ##"
 echo "##                                                                 ##"   
 echo "##  ${PROJECT}          ##"
 echo "##                                                                 ##"   

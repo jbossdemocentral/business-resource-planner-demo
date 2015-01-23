@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 set PROJECT_HOME=%~dp0
 set DEMO=JBoss Business Optimizer Demo
-set AUTHORS=Geoffrey De Smet, Eric D. Schabell
+set AUTHORS=Geoffrey De Smet, Andrew Block, Eric D. Schabell
 set PROJECT=git@github.com:jbossdemocentral/brms-planner-demo.git
 set PRODUCT=JBoss BRMS
 set TARGET_DIR=%PROJECT_HOME%target
@@ -36,7 +36,7 @@ echo ##  #####  #        #    #####  #   #  #####  #####  #####  #   #  ##
 echo ##                                                                 ##   
 echo ##                                                                 ##   
 echo ##  brought to you by,                                             ##   
-echo ##             %AUTHORS%                  ##
+echo ##             %AUTHORS%    ##
 echo ##                                                                 ##   
 echo ##  %PROJECT%         ##
 echo ##                                                                 ##   
