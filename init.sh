@@ -1,7 +1,7 @@
 #!/bin/sh 
 DEMO="JBoss Business Planner Demo"
 AUTHORS="Geoffrey De Smet, Andrew Block, Eric D. Schabell"
-PROJECT="git@github.com:jbossdemocentral/brms-planner-demo.git"
+PROJECT="git@github.com:jbossdemocentral/business-resource-planner-demo.git"
 PRODUCT="JBoss Business Resource Planner"
 TARGET_DIR=./target
 JBOSS_HOME=./target/jboss-eap-6.4
@@ -21,24 +21,24 @@ VERSION=6.1
 clear 
 
 echo
-echo "#####################################################################"
-echo "##                                                                 ##"   
-echo "##  Setting up the ${DEMO}                     ##"
-echo "##                                                                 ##"   
-echo "##                                                                 ##"   
-echo "##    ####   #      ###   #   #  #   #  #####  ####                ##"
-echo "##    #   #  #     #   #  ##  #  ##  #  #      #   #               ##"
-echo "##    ####   #     #####  # # #  # # #  ###    ####                ##"
-echo "##    #      #     #   #  #  ##  #  ##  #      #  #                ##"
-echo "##    #      ##### #   #  #   #  #   #  #####  #   #               ##"
-echo "##                                                                 ##"   
-echo "##                                                                 ##"   
-echo "##  brought to you by,                                             ##"   
-echo "##             ${AUTHORS}    ##"
-echo "##                                                                 ##"   
-echo "##  ${PROJECT}          ##"
-echo "##                                                                 ##"   
-echo "#####################################################################"
+echo "##########################################################################"
+echo "##                                                                      ##"   
+echo "##  Setting up the ${DEMO}                          ##"
+echo "##                                                                      ##"   
+echo "##                                                                      ##"   
+echo "##    ####   #      ###   #   #  #   #  #####  ####                     ##"
+echo "##    #   #  #     #   #  ##  #  ##  #  #      #   #                    ##"
+echo "##    ####   #     #####  # # #  # # #  ###    ####                     ##"
+echo "##    #      #     #   #  #  ##  #  ##  #      #  #                     ##"
+echo "##    #      ##### #   #  #   #  #   #  #####  #   #                    ##"
+echo "##                                                                      ##"   
+echo "##                                                                      ##"   
+echo "##  brought to you by,                                                  ##"   
+echo "##             ${AUTHORS}         ##"
+echo "##                                                                      ##"   
+echo "##  ${PROJECT}  ##"
+echo "##                                                                      ##"   
+echo "##########################################################################"
 echo
 
 # make some checks first before proceeding.	
