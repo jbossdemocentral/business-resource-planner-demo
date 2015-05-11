@@ -1,6 +1,6 @@
-JBoss Business Resource Optimizer Demo 
-======================================
-Give you a tour of the Business Resource Optimizer component for resource planning in JBoss BRMS 
+JBoss Business Resource Planner Demo 
+====================================
+Give you a tour of the Business Resource Planner component for resource planning in JBoss BRMS 
 with two examples, a vehicle routing solution and a cloud load balancing solution.
 
 There are two options available to you for using this demo; local and Docker.
@@ -8,22 +8,22 @@ There are two options available to you for using this demo; local and Docker.
 
 Option 1 - Install on your machine
 ----------------------------------
-1. [Download and unzip.](https://github.com/jbossdemocentral/business-resource-optimizer-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/jbossdemocentral/business-resource-planner-demo/archive/master.zip)
 
 2. Add products to installs directory.
 
 3. Run 'init.sh' or 'init.bat'.
 
-4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.1/bin directory
+4. Start JBoss BPMS Server by running 'standalone.sh' or 'standalone.bat' in the <path-to-project>/target/jboss-eap-6.4/bin directory
 
-5. Run web examples at [http://localhost:8080/optaplanner-webexamples-6.0.3-redhat-6/] (http://localhost:8080/optaplanner-webexamples-6.0.3-redhat-6/)
+5. Run web examples at [http://localhost:8080/http://localhost:8080/jboss-business-resource-planner](http://localhost:8080/http://localhost:8080/jboss-business-resource-planner)
 
 
-Option 2 - Generate docker install
+Option 2 - Generate containerized install
 ----------------------------------
 The following steps can be used to configure and run the demo in a docker container
 
-1. [Download and unzip.](https://github.com/jbossdemocentral/business-resource-optimizer-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/jbossdemocentral/business-resource-planner-demo/archive/master.zip)
 
 2. Add product installer to installs directory.
 
@@ -32,16 +32,16 @@ The following steps can be used to configure and run the demo in a docker contai
 4. Build demo image
 
 	```
-	docker build -t jbossdemocentral/business-resource-optimizer-demo .
+	docker build -t jbossdemocentral/business-resource-planner-demo .
 	```
 5. Start demo container
 
 	```
-	docker run --it -p 8080:8080 -p 9990:9990 jbossdemocentral/business-resource-optimizer-demo
+	docker run --it -p 8080:8080 -p 9990:9990 jbossdemocentral/business-resource-planner-demo
 	```
-6. Run web examples at http://<DOCKER_HOST>:8080/optaplanner-webexamples-6.0.3-redhat-6/
+6. Run web examples at http://<DOCKER_HOST>:8080/http://localhost:8080/jboss-business-resource-planner
 
-Additional information can be found in the jbossdemocentral docker [developer repository](https://github.com/jbossdemocentral/docker-developer)
+Additional information can be found in the jbossdemocentral container [developer repository](https://github.com/jbossdemocentral/docker-developer)
 
 
 Supporting Articles
@@ -55,7 +55,9 @@ Released versions
 -----------------
 See the tagged releases for the following versions of the product:
 
-- v1.0 - JBoss BRMS 6.0.3, JBoss EAP 6.1.1 and optional docker installation.
+- v1.1 - JBoss Business Resource Planner from JBoss BPM Suite 6.1, JBoss EAP 6.4.0 and optional containerized installation.
+
+- v1.0 - JBoss BRMS 6.0.3, JBoss EAP 6.1.1 and optional containerized installation.
 
 - v0.9 - Migrated to JBoss Demo Central and updated windows init.bat support.
 
@@ -78,6 +80,6 @@ See the tagged releases for the following versions of the product:
 - v0.1 - JBoss BRMS 6.0.0.Beta1, JBoss EAP 6.1, and Planner example war installed.
 
 
-![Cloud Balancing] (https://github.com/jbossdemocentral/business-resource-optimizer-demo/blob/master/docs/demo-images/cloud-balancing.png?raw=true)
+![Cloud Balancing] (https://github.com/jbossdemocentral/business-resource-planner-demo/blob/master/docs/demo-images/cloud-balancing.png?raw=true)
 
-![Vehicle Routing] (https://github.com/jbossdemocentral/business-resource-optimizer-demo/blob/master/docs/demo-images/vehicle-routing.png?raw=true)
+![Vehicle Routing] (https://github.com/jbossdemocentral/business-resource-planner-demo/blob/master/docs/demo-images/vehicle-routing.png?raw=true)
