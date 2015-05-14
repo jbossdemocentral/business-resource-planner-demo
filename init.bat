@@ -92,7 +92,7 @@ echo.
 
 cscript /nologo %SUPPORT_DIR%\unzip.vbs %SRC_DIR%\%PLANNER% %TARGET_DIR%
 
-echo - installing the JBoss Business Resource Optimizer example app..
+echo - installing the JBoss Business Resource Planner example app..
 echo.
 
 xcopy /Y /Q "%TARGET_DIR%\%PLANNER_DIR%\webexamples\binaries\%EXAMPLE_WAR%" "%SERVER_DIR%\jboss-business-resource-planner.war"

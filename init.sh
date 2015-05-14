@@ -11,7 +11,6 @@ SERVER_BIN=$JBOSS_HOME/bin
 PLANNER_DIR=jboss-brms-bpmsuite-6.1.0.GA-redhat-2-planner-engine
 SRC_DIR=./installs
 SUPPORT_DIR=./support
-PRJ_DIR=./projects/planner-demo
 EAP=jboss-eap-6.4.0-installer.jar
 PLANNER=jboss-brms-6.1.0.GA-planner-engine.zip
 EXAMPLE_WAR=optaplanner-webexamples-6.2.0.Final-redhat-4.war
@@ -85,11 +84,12 @@ echo Unpacking $PRODUCT $VERSION...
 echo
 unzip -q -d $TARGET_DIR $SRC_DIR/$PLANNER
 
-echo "  - installing the JBoss Business Resource Optimizer example app.."
+echo "  - installing the JBoss Business Resource Planner example app.."
 echo
 cp -r $TARGET_DIR/$PLANNER_DIR/webexamples/binaries/$EXAMPLE_WAR $SERVER_DIR/jboss-business-resource-planner.war
 rm -rf $TARGET_DIR/$PLANNER_DIR
 
+echo
 echo "  - enabling demo accounts role setup in application-roles.properties file..."
 echo
 cp $SUPPORT_DIR/application-roles.properties $SERVER_CONF

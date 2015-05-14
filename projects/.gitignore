@@ -1,6 +1,2 @@
-target/
-*.m4v
-.DS_Store
-RemoteSystemsTempFiles/
-.index/
-.niogit/
+business-resource-planner-examples/
+

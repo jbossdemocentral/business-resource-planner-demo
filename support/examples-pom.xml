@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.optaplanner</groupId>
+    <artifactId>optaplanner</artifactId>
+    <version>6.2.0.Final-redhat-4</version>
+  </parent>
+
+  <artifactId>optaplanner-examples</artifactId>
+
+  <name>OptaPlanner examples</name>
+  <description>OptaPlanner solves planning problems.
+    This lightweight, embeddable planning engine implements powerful and scalable algorithms
+    to optimize business resource scheduling and planning.
+
+    This module contains the non-web examples which demonstrate how to use it in a normal Java application.</description>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <configuration>
+            <archive>
+              <manifest>
+                <!-- Needed for runExamples.sh and runExamples.bat -->
+                <addClasspath>true</addClasspath>
+                <classpathPrefix>../../binaries/</classpathPrefix>
+              </manifest>
+            </archive>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <configuration>
+            <executable>java</executable>
+            <classpathScope>runtime</classpathScope>
+            <arguments>
+              <argument>-Xms256m</argument>
+              <argument>-Xmx1024m</argument>
+              <argument>-server</argument>
+              <argument>-cp</argument>
+              <classpath></classpath>
+              <argument>org.optaplanner.examples.app.OptaPlannerExamplesApp</argument>
+            </arguments>
+          </configuration>
+        </plugin>
+        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+        <plugin>
+        	<groupId>org.eclipse.m2e</groupId>
+        	<artifactId>lifecycle-mapping</artifactId>
+        	<version>1.0.0</version>
+        	<configuration>
+        		<lifecycleMappingMetadata>
+        			<pluginExecutions>
+        				<pluginExecution>
+        					<pluginExecutionFilter>
+        						<groupId>
+        							org.commonjava.maven.plugins
+        						</groupId>
+        						<artifactId>
+        							project-sources-maven-plugin
+        						</artifactId>
+        						<versionRange>[0.3,)</versionRange>
+        						<goals>
+        							<goal>archive</goal>
+        						</goals>
+        					</pluginExecutionFilter>
+        					<action>
+        						<ignore></ignore>
+        					</action>
+        				</pluginExecution>
+        			</pluginExecutions>
+        		</lifecycleMappingMetadata>
+        	</configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+	<!-- This repo configuration added to find product deps. -->	
+<repositories>
+ <repository>
+  <id>jboss-maven-repository</id>
+  <name>JBoss Maven Repository</name>
+  <url>http://maven.repository.redhat.com/techpreview/all/</url>
+  <layout>default</layout>
+  <releases>
+   <enabled>true</enabled>
+   <updatePolicy>never</updatePolicy>
+  </releases>
+  <snapshots>
+   <enabled>false</enabled>
+   <updatePolicy>never</updatePolicy>
+  </snapshots>
+ </repository>
+</repositories>
+
+<pluginRepositories>
+ <pluginRepository>
+  <id>jboss-maven-repository</id>
+  <name>JBoss Maven Repository</name>
+  <url>http://maven.repository.redhat.com/techpreview/all/</url>
+  <layout>default</layout>
+  <releases>
+   <enabled>true</enabled>
+   <updatePolicy>never</updatePolicy>
+  </releases>
+  <snapshots>
+   <enabled>false</enabled>
+   <updatePolicy>never</updatePolicy>
+  </snapshots>
+ </pluginRepository>
+</pluginRepositories>
+
+  <dependencies>
+    <!-- Internal dependencies -->
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-benchmark</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.drools</groupId>
+      <artifactId>drools-decisiontables</artifactId>
+    </dependency>
+    <!-- External dependencies -->
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>jcommon</artifactId>
+    </dependency>
+    <!-- Common utils -->
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+    </dependency>
+    <!-- Logging -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <!-- XML -->
+    <dependency>
+      <groupId>com.thoughtworks.xstream</groupId>
+      <artifactId>xstream</artifactId>
+    </dependency>
+
+    <!-- Examples only dependencies. -->
+    <!--
+      WARNING: every examples only dependency must be properly dealt with in
+      optaplanner-distribution/src/main/assembly/assembly-optaplanner.xml
+    -->
+    <!-- Converters -->
+    <dependency>
+      <groupId>org.jdom</groupId>
+      <artifactId>jdom</artifactId>
+    </dependency>
+  </dependencies>
+
+</project>
