@@ -39,7 +39,7 @@ The following steps can be used to configure and run the demo in a docker contai
 	```
 	docker run --it -p 8080:8080 -p 9990:9990 jbossdemocentral/business-resource-planner-demo
 	```
-6. Run web examples at http://<DOCKER_HOST>:8080/http://localhost:8080/jboss-business-resource-planner
+6. Run web examples at http://<DOCKER_HOST>:8080/jboss-business-resource-planner
 
 Additional information can be found in the jbossdemocentral container [developer repository](https://github.com/jbossdemocentral/docker-developer)
 
