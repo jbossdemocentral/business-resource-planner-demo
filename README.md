@@ -3,7 +3,7 @@ JBoss Business Resource Planner Demo
 Give you a tour of the Business Resource Planner component for resource planning in JBoss BRMS 
 with two examples, a vehicle routing solution and a cloud load balancing solution.
 
-There are two options available to you for using this demo; local and Docker.
+There are two options available to you for using this demo; local and containerized.
 
 
 Option 1 - Install on your machine
