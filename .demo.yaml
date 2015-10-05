@@ -5,6 +5,6 @@ technologies:
   - JBoss EAP
   - JBoss BRMS
 summary: Take a tour of the Business Resource Planner component for resource planning in JBoss BRMS with two examples, a vehicle routing solution and a cloud load balancing solution. There are two options available to you for using this demo; local and containerized.
-level: Intermediate
+level: Beginner
 product: brms
 author: Geoffrey De Smet, Andrew Block, Eric D. Schabell
