@@ -8,13 +8,13 @@ JBOSS_HOME=./target/jboss-eap-6.4
 SERVER_DIR=$JBOSS_HOME/standalone/deployments/
 SERVER_CONF=$JBOSS_HOME/standalone/configuration/
 SERVER_BIN=$JBOSS_HOME/bin
-PLANNER_DIR=jboss-brms-bpmsuite-6.1.0.GA-redhat-2-planner-engine
+PLANNER_DIR=jboss-brms-bpmsuite-6.2.0.GA-redhat-2-planner-engine
 SRC_DIR=./installs
 SUPPORT_DIR=./support
-EAP=jboss-eap-6.4.0-installer.jar
-PLANNER=jboss-brms-6.1.0.GA-planner-engine.zip
+EAP=jboss-eap-6.4.3-installer.jar
+PLANNER=jboss-brms-6.2.0.GA-planner-engine.zip
 EXAMPLE_WAR=optaplanner-webexamples-6.2.0.Final-redhat-4.war
-VERSION=6.1
+VERSION=6.2
 
 # wipe screen.
 clear 

@@ -7,18 +7,18 @@ set AUTHORS=Geoffrey De Smet, Andrew Block, Eric D. Schabell
 set PROJECT=git@github.com:jbossdemocentral/business-resource-planner-demo.git
 set PRODUCT=JBoss BRMS
 set TARGET_DIR=%PROJECT_HOME%target
-set JBOSS_HOME=%PROJECT_HOME%target\jboss-eap-6.1
+set JBOSS_HOME=%PROJECT_HOME%target\jboss-eap-6.4
 set SERVER_DIR=%JBOSS_HOME%\standalone\deployments\
 set SERVER_CONF=%JBOSS_HOME%\standalone\configuration\
 set SERVER_BIN=%JBOSS_HOME%\bin
-set PLANNER_DIR=jboss-brms-bpmsuite-6.1.0.GA-redhat-2-planner-engine
+set PLANNER_DIR=jboss-brms-bpmsuite-6.2.0.GA-redhat-2-planner-engine
 set SRC_DIR=%PROJECT_HOME%installs
 set SUPPORT_DIR=%PROJECT_HOME%support
 set PRJ_DIR=%PROJECT_HOME%projects
-set EAP=jboss-eap-6.4.0-installer.jar
-set PLANNER=jboss-brms-6.1.0.GA-planner-engine.zip
+set EAP=jboss-eap-6.4.3-installer.jar
+set PLANNER=jboss-brms-6.2.0.GA-planner-engine.zip
 set EXAMPLE_WAR=optaplanner-webexamples-6.2.0.Final-redhat-4.war
-set VERSION=6.1
+set VERSION=6.2
 
 REM wipe screen.
 cls

@@ -57,6 +57,8 @@ Released versions
 -----------------
 See the tagged releases for the following versions of the product:
 
+- v1.2 - JBoss Business Resource Planner from JBoss BPM Suite 6.2, JBoss EAP 6.4.3 and example application installed.
+
 - v1.1 - JBoss Business Resource Planner from JBoss BPM Suite 6.1, JBoss EAP 6.4.0 and optional containerized installation.
 
 - v1.0 - JBoss BRMS 6.0.3, JBoss EAP 6.1.1 and optional containerized installation.
