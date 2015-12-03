@@ -1,5 +1,5 @@
 id: jbossdemocentral-business-resource-planner
-title: Take a tour of the Business Resource Planner component for resource planning in JBoss BRMS.
+title: JBoss BRMS Business Resource Planner Demo
 github_repo_url: https://github.com/jbossdemocentral/business-resource-planner-demo
 technologies:
   - JBoss EAP
