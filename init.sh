@@ -8,12 +8,13 @@ JBOSS_HOME=./target/jboss-eap-6.4
 SERVER_DIR=$JBOSS_HOME/standalone/deployments/
 SERVER_CONF=$JBOSS_HOME/standalone/configuration/
 SERVER_BIN=$JBOSS_HOME/bin
-PLANNER_DIR=jboss-brms-bpmsuite-6.2.0.GA-redhat-2-planner-engine
+PLANNER_DIR=jboss-brms-bpmsuite-6.2-planner-engine
 SRC_DIR=./installs
 SUPPORT_DIR=./support
-EAP=jboss-eap-6.4.3-installer.jar
-PLANNER=jboss-brms-6.2.0.GA-planner-engine.zip
-EXAMPLE_WAR=optaplanner-webexamples-6.2.0.Final-redhat-4.war
+EAP=jboss-eap-6.4.0-installer.jar
+EAP_PATCH=jboss-eap-6.4.4-patch.zip
+PLANNER=jboss-brms-bpmsuite-6.2.0.GA-planner-engine.zip
+EXAMPLE_WAR=optaplanner-webexamples-6.3.0.Final-redhat-5.war
 VERSION=6.2
 
 # wipe screen.
@@ -51,6 +52,16 @@ else
 		exit
 fi
 
+if [ -r $SRC_DIR/$EAP_PATCH ] || [ -L $SRC_DIR/$EAP_PATCH ]; then
+	echo Product patches are present...
+	echo
+else
+	echo Need to download $EAP_PATCH package from the Customer Portal 
+	echo and place it in the $SRC_DIR directory to proceed...
+	echo
+	exit
+fi
+
 if [ -r $SRC_DIR/$PLANNER ] || [ -L $SRC_DIR/$PLANNER ]; then
 		echo Planner sources are present...
 		echo
@@ -79,7 +90,19 @@ if [ $? -ne 0 ]; then
 	exit
 fi
 
+echo
+echo "Applying JBoss EAP 6.4.4 patch now..."
+echo
+$JBOSS_HOME/bin/jboss-cli.sh --command="patch apply $SRC_DIR/$EAP_PATCH"
+
+if [ $? -ne 0 ]; then
+	echo
+	echo Error occurred during JBoss EAP patching!
+	exit
+fi
+
 # Unzip the required files from JBoss product deployable.
+echo
 echo Unpacking $PRODUCT $VERSION...
 echo
 unzip -q -d $TARGET_DIR $SRC_DIR/$PLANNER

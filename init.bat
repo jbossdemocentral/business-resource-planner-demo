@@ -11,13 +11,14 @@ set JBOSS_HOME=%PROJECT_HOME%target\jboss-eap-6.4
 set SERVER_DIR=%JBOSS_HOME%\standalone\deployments\
 set SERVER_CONF=%JBOSS_HOME%\standalone\configuration\
 set SERVER_BIN=%JBOSS_HOME%\bin
-set PLANNER_DIR=jboss-brms-bpmsuite-6.2.0.GA-redhat-2-planner-engine
+set PLANNER_DIR=jboss-brms-bpmsuite-6.2-planner-engine
 set SRC_DIR=%PROJECT_HOME%installs
 set SUPPORT_DIR=%PROJECT_HOME%support
 set PRJ_DIR=%PROJECT_HOME%projects
-set EAP=jboss-eap-6.4.3-installer.jar
-set PLANNER=jboss-brms-6.2.0.GA-planner-engine.zip
-set EXAMPLE_WAR=optaplanner-webexamples-6.2.0.Final-redhat-4.war
+set EAP=jboss-eap-6.4.0-installer.jar
+set EAP_PATCH=jboss-eap-6.4.4-patch.zip
+set PLANNER=jboss-brms-bpmsuite-6.2.0.GA-planner-engine.zip
+set EXAMPLE_WAR=optaplanner-webexamples-6.3.0.Final-redhat-5.war
 set VERSION=6.2
 
 REM wipe screen.
@@ -55,6 +56,16 @@ if exist %SRC_DIR%\%EAP% (
         GOTO :EOF
 )
 
+if exist %SRC_DIR%\%EAP_PATCH% (
+        echo Product patches are present...
+        echo.
+) else (
+        echo Need to download %EAP_PATCH% package from the Customer Support Portal
+        echo and place it in the %SRC_DIR% directory to proceed...
+        echo.
+        GOTO :EOF
+)
+
 if exist %SRC_DIR%\%PLANNER% (
         echo Product sources are present...
         echo.
@@ -86,12 +97,28 @@ if not "%ERRORLEVEL%" == "0" (
 	GOTO :EOF
 )
 
+call set NOPAUSE=true
+
+echo.
+echo Applying JBoss EAP patch now...
+echo.
+call %JBOSS_HOME%/bin/jboss-cli.bat --command="patch apply %SRC_DIR%/%EAP_PATCH% --override-all"
+
+if not "%ERRORLEVEL%" == "0" (
+  echo.
+	echo Error Occurred During JBoss EAP Patch Installation!
+	echo.
+	GOTO :EOF
+)
+
 REM Unzip the required files from JBoss product deployable.
+echo.
 echo Unpacking %PRODUCT% %VERSION%...
 echo.
 
 cscript /nologo %SUPPORT_DIR%\unzip.vbs %SRC_DIR%\%PLANNER% %TARGET_DIR%
 
+echo.
 echo - installing the JBoss Business Resource Planner example app..
 echo.
 
